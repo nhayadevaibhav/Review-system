@@ -11,7 +11,11 @@ app.use(express.json());
 
 app.use("/api/v1",router)
 app.get("/",(req,res)=>{
-  res.send(" vaibhav review system");
+   res.json({
+    success: true,
+    message: " Server Running Successfully",
+    message: "Vaibhav"
+  })
 });
 dotenv.config();
 
